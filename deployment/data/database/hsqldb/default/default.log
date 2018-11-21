@@ -1,0 +1,565 @@
+/*C9*/SET SCHEMA PUBLIC
+DELETE FROM "mendixsystem$version" WHERE "versionnumber"='4.2'
+INSERT INTO "mendixsystem$version" VALUES('4.2','2018-11-17 14:28:47.888000','3.0.0','unversioned','Demo')
+COMMIT
+/*C10*/SET SCHEMA PUBLIC
+DELETE FROM "system$userrole" WHERE "id"=2533274790395905
+INSERT INTO "system$userrole" VALUES(2533274790395905,'8dd52bfa-6d7e-453b-b506-303c0a3d9567','','Administrator')
+DELETE FROM "system$userrole" WHERE "id"=2533274790395906
+INSERT INTO "system$userrole" VALUES(2533274790395906,'53f5d6fa-6da9-4a71-b011-454ec052cce8','','User')
+COMMIT
+DELETE FROM "mendixsystem$properties" WHERE "key"='Mendix.Runtime.DeploymentID'
+INSERT INTO "mendixsystem$properties" VALUES('Mendix.Runtime.DeploymentID','636781341019712343')
+COMMIT
+DELETE FROM "system$session" WHERE "id"=7318349394477257
+DELETE FROM "system$session_user" WHERE "system$sessionid"=7318349394477257 AND "system$userid"=281474976710857
+COMMIT
+DELETE FROM "system$xasinstance" WHERE "id"=562949953421513
+COMMIT
+DELETE FROM "mendixsystem$entityidentifier" WHERE "id"='d4154981-8dac-4150-aec5-efa3ef62a7a2'
+INSERT INTO "mendixsystem$entityidentifier" VALUES('d4154981-8dac-4150-aec5-efa3ef62a7a2',2,401)
+COMMIT
+INSERT INTO "system$xasinstance" VALUES(562949953421613,'9f3a8b01-7b69-4238-8ee0-5c326ed59e44','2018-11-18 09:35:24.859000','2018-11-18 09:35:24.817000',NULL,NULL,NULL)
+COMMIT
+DELETE FROM "mendixsystem$entityidentifier" WHERE "id"='282e2e60-88a5-469d-84a5-ba8d9151644f'
+INSERT INTO "mendixsystem$entityidentifier" VALUES('282e2e60-88a5-469d-84a5-ba8d9151644f',1,401)
+COMMIT
+INSERT INTO "system$user" VALUES(281474976710957,'2018-11-18 09:36:46.476000',TRUE,'2018-11-18 09:36:46.476000','2018-11-18 09:36:46.544000',FALSE,TRUE,0,FALSE,'Anonymous_68f99f82-9546-4343-a25d-ce0d70f001ea','{BCrypt}$2a$10$hIa1A6Y/FEFIT.GVyVN8J.GvCbNMLZooXxSesDrIHTOF2tovag726','System.User',NULL,281474976710957)
+INSERT INTO "system$userroles" VALUES(281474976710957,2533274790395905)
+INSERT INTO "system$user_language" VALUES(281474976710957,8444249301319681)
+COMMIT
+DELETE FROM "system$user" WHERE "id"=281474976710957
+INSERT INTO "system$user" VALUES(281474976710957,'2018-11-18 09:36:46.476000',TRUE,'2018-11-18 09:36:46.476000','2018-11-18 09:36:46.587000',FALSE,TRUE,0,FALSE,'Anonymous_68f99f82-9546-4343-a25d-ce0d70f001ea','{BCrypt}$2a$10$hIa1A6Y/FEFIT.GVyVN8J.GvCbNMLZooXxSesDrIHTOF2tovag726','System.User',NULL,281474976710957)
+COMMIT
+/*C11*/SET SCHEMA PUBLIC
+DELETE FROM "mendixsystem$entityidentifier" WHERE "id"='37f9fd49-5318-4c63-9a51-f761779b202f'
+INSERT INTO "mendixsystem$entityidentifier" VALUES('37f9fd49-5318-4c63-9a51-f761779b202f',26,401)
+COMMIT
+INSERT INTO "system$session" VALUES(7318349394477357,'cced8455-070c-4b00-b7f0-52f7e4aba5e9','2018-11-18 09:36:46.608000','fbfc5a2f-a7c0-4436-a645-3ef3cf1ddb9f','2018-11-18 09:36:46.608000','68462c46-814c-47d8-ba0a-842241ebf489')
+INSERT INTO "system$session_user" VALUES(7318349394477357,281474976710957)
+COMMIT
+/*C9*/DELETE FROM "system$session" WHERE "id"=7318349394477357
+INSERT INTO "system$session" VALUES(7318349394477357,'cced8455-070c-4b00-b7f0-52f7e4aba5e9','2018-11-18 09:36:46.608000','fbfc5a2f-a7c0-4436-a645-3ef3cf1ddb9f','2018-11-18 09:36:48.561000','68462c46-814c-47d8-ba0a-842241ebf489')
+COMMIT
+DELETE FROM "mendixsystem$entityidentifier" WHERE "id"='685df5a6-1e02-49bb-a0b5-5a55c5e8313d'
+INSERT INTO "mendixsystem$entityidentifier" VALUES('685df5a6-1e02-49bb-a0b5-5a55c5e8313d',21,401)
+COMMIT
+INSERT INTO "system$scheduledeventinformation" VALUES(5910974510924077,'Running','This event releases locks of expired sessions automatically. ',NULL,'2018-11-18 09:38:53.009000','releaseOldLocks')
+COMMIT
+DELETE FROM "system$scheduledeventinformation" WHERE "id"=5910974510924077
+INSERT INTO "system$scheduledeventinformation" VALUES(5910974510924077,'Completed','This event releases locks of expired sessions automatically. ','2018-11-18 09:38:53.035000','2018-11-18 09:38:53.009000','releaseOldLocks')
+COMMIT
+/*C11*/DELETE FROM "system$xasinstance" WHERE "id"=562949953421613
+INSERT INTO "system$xasinstance" VALUES(562949953421613,'9f3a8b01-7b69-4238-8ee0-5c326ed59e44','2018-11-18 09:35:24.859000','2018-11-18 09:40:24.890000',NULL,NULL,NULL)
+COMMIT
+/*C10*/DELETE FROM "system$session" WHERE "id"=7318349394477357
+INSERT INTO "system$session" VALUES(7318349394477357,'cced8455-070c-4b00-b7f0-52f7e4aba5e9','2018-11-18 09:36:46.608000','fbfc5a2f-a7c0-4436-a645-3ef3cf1ddb9f','2018-11-18 09:41:47.792000','68462c46-814c-47d8-ba0a-842241ebf489')
+COMMIT
+INSERT INTO "system$scheduledeventinformation" VALUES(5910974510924078,'Running','This event releases locks of expired sessions automatically. ',NULL,'2018-11-18 09:43:53.002000','releaseOldLocks')
+COMMIT
+DELETE FROM "system$scheduledeventinformation" WHERE "id"=5910974510924078
+INSERT INTO "system$scheduledeventinformation" VALUES(5910974510924078,'Completed','This event releases locks of expired sessions automatically. ','2018-11-18 09:43:53.005000','2018-11-18 09:43:53.002000','releaseOldLocks')
+COMMIT
+DELETE FROM "system$xasinstance" WHERE "id"=562949953421613
+INSERT INTO "system$xasinstance" VALUES(562949953421613,'9f3a8b01-7b69-4238-8ee0-5c326ed59e44','2018-11-18 09:35:24.859000','2018-11-18 09:45:24.903000',NULL,NULL,NULL)
+COMMIT
+DELETE FROM "system$session" WHERE "id"=7318349394477357
+INSERT INTO "system$session" VALUES(7318349394477357,'cced8455-070c-4b00-b7f0-52f7e4aba5e9','2018-11-18 09:36:46.608000','fbfc5a2f-a7c0-4436-a645-3ef3cf1ddb9f','2018-11-18 09:46:48.264000','68462c46-814c-47d8-ba0a-842241ebf489')
+COMMIT
+INSERT INTO "system$scheduledeventinformation" VALUES(5910974510924079,'Running','This event releases locks of expired sessions automatically. ',NULL,'2018-11-18 09:48:53.001000','releaseOldLocks')
+COMMIT
+DELETE FROM "system$scheduledeventinformation" WHERE "id"=5910974510924079
+INSERT INTO "system$scheduledeventinformation" VALUES(5910974510924079,'Completed','This event releases locks of expired sessions automatically. ','2018-11-18 09:48:53.003000','2018-11-18 09:48:53.001000','releaseOldLocks')
+COMMIT
+/*C9*/DISCONNECT
+/*C10*/DELETE FROM "system$xasinstance" WHERE "id"=562949953421613
+INSERT INTO "system$xasinstance" VALUES(562949953421613,'9f3a8b01-7b69-4238-8ee0-5c326ed59e44','2018-11-18 09:35:24.859000','2018-11-18 09:50:24.922000',NULL,NULL,NULL)
+COMMIT
+DELETE FROM "system$session" WHERE "id"=7318349394477357
+INSERT INTO "system$session" VALUES(7318349394477357,'cced8455-070c-4b00-b7f0-52f7e4aba5e9','2018-11-18 09:36:46.608000','fbfc5a2f-a7c0-4436-a645-3ef3cf1ddb9f','2018-11-18 09:51:48.598000','68462c46-814c-47d8-ba0a-842241ebf489')
+COMMIT
+INSERT INTO "system$scheduledeventinformation" VALUES(5910974510924080,'Running','This event releases locks of expired sessions automatically. ',NULL,'2018-11-18 09:53:53.001000','releaseOldLocks')
+COMMIT
+DELETE FROM "system$scheduledeventinformation" WHERE "id"=5910974510924080
+INSERT INTO "system$scheduledeventinformation" VALUES(5910974510924080,'Completed','This event releases locks of expired sessions automatically. ','2018-11-18 09:53:53.004000','2018-11-18 09:53:53.001000','releaseOldLocks')
+COMMIT
+/*C11*/DISCONNECT
+/*C10*/DELETE FROM "system$xasinstance" WHERE "id"=562949953421613
+INSERT INTO "system$xasinstance" VALUES(562949953421613,'9f3a8b01-7b69-4238-8ee0-5c326ed59e44','2018-11-18 09:35:24.859000','2018-11-18 09:55:24.927000',NULL,NULL,NULL)
+COMMIT
+DELETE FROM "system$session" WHERE "id"=7318349394477357
+INSERT INTO "system$session" VALUES(7318349394477357,'cced8455-070c-4b00-b7f0-52f7e4aba5e9','2018-11-18 09:36:46.608000','fbfc5a2f-a7c0-4436-a645-3ef3cf1ddb9f','2018-11-18 09:56:48.818000','68462c46-814c-47d8-ba0a-842241ebf489')
+COMMIT
+INSERT INTO "system$scheduledeventinformation" VALUES(5910974510924081,'Running','This event releases locks of expired sessions automatically. ',NULL,'2018-11-18 09:58:53.015000','releaseOldLocks')
+COMMIT
+DELETE FROM "system$scheduledeventinformation" WHERE "id"=5910974510924081
+INSERT INTO "system$scheduledeventinformation" VALUES(5910974510924081,'Completed','This event releases locks of expired sessions automatically. ','2018-11-18 09:58:53.015000','2018-11-18 09:58:53.015000','releaseOldLocks')
+COMMIT
+DELETE FROM "system$xasinstance" WHERE "id"=562949953421613
+INSERT INTO "system$xasinstance" VALUES(562949953421613,'9f3a8b01-7b69-4238-8ee0-5c326ed59e44','2018-11-18 09:35:24.859000','2018-11-18 10:00:24.933000',NULL,NULL,NULL)
+COMMIT
+DELETE FROM "system$session" WHERE "id"=7318349394477357
+INSERT INTO "system$session" VALUES(7318349394477357,'cced8455-070c-4b00-b7f0-52f7e4aba5e9','2018-11-18 09:36:46.608000','fbfc5a2f-a7c0-4436-a645-3ef3cf1ddb9f','2018-11-18 10:01:48.995000','68462c46-814c-47d8-ba0a-842241ebf489')
+COMMIT
+INSERT INTO "system$scheduledeventinformation" VALUES(5910974510924082,'Running','This event releases locks of expired sessions automatically. ',NULL,'2018-11-18 10:03:53.001000','releaseOldLocks')
+COMMIT
+DELETE FROM "system$scheduledeventinformation" WHERE "id"=5910974510924082
+INSERT INTO "system$scheduledeventinformation" VALUES(5910974510924082,'Completed','This event releases locks of expired sessions automatically. ','2018-11-18 10:03:53.003000','2018-11-18 10:03:53.001000','releaseOldLocks')
+COMMIT
+DELETE FROM "system$xasinstance" WHERE "id"=562949953421613
+INSERT INTO "system$xasinstance" VALUES(562949953421613,'9f3a8b01-7b69-4238-8ee0-5c326ed59e44','2018-11-18 09:35:24.859000','2018-11-18 10:05:24.938000',NULL,NULL,NULL)
+COMMIT
+DELETE FROM "system$session" WHERE "id"=7318349394477357
+INSERT INTO "system$session" VALUES(7318349394477357,'cced8455-070c-4b00-b7f0-52f7e4aba5e9','2018-11-18 09:36:46.608000','fbfc5a2f-a7c0-4436-a645-3ef3cf1ddb9f','2018-11-18 10:06:49.311000','68462c46-814c-47d8-ba0a-842241ebf489')
+COMMIT
+INSERT INTO "system$scheduledeventinformation" VALUES(5910974510924083,'Running','This event releases locks of expired sessions automatically. ',NULL,'2018-11-18 10:08:53.010000','releaseOldLocks')
+COMMIT
+DELETE FROM "system$scheduledeventinformation" WHERE "id"=5910974510924083
+INSERT INTO "system$scheduledeventinformation" VALUES(5910974510924083,'Completed','This event releases locks of expired sessions automatically. ','2018-11-18 10:08:53.010000','2018-11-18 10:08:53.010000','releaseOldLocks')
+COMMIT
+DELETE FROM "system$xasinstance" WHERE "id"=562949953421613
+INSERT INTO "system$xasinstance" VALUES(562949953421613,'9f3a8b01-7b69-4238-8ee0-5c326ed59e44','2018-11-18 09:35:24.859000','2018-11-18 10:10:24.942000',NULL,NULL,NULL)
+COMMIT
+DELETE FROM "system$session" WHERE "id"=7318349394477357
+INSERT INTO "system$session" VALUES(7318349394477357,'cced8455-070c-4b00-b7f0-52f7e4aba5e9','2018-11-18 09:36:46.608000','fbfc5a2f-a7c0-4436-a645-3ef3cf1ddb9f','2018-11-18 10:11:49.813000','68462c46-814c-47d8-ba0a-842241ebf489')
+COMMIT
+INSERT INTO "system$scheduledeventinformation" VALUES(5910974510924084,'Running','This event releases locks of expired sessions automatically. ',NULL,'2018-11-18 10:13:53.004000','releaseOldLocks')
+COMMIT
+DELETE FROM "system$scheduledeventinformation" WHERE "id"=5910974510924084
+INSERT INTO "system$scheduledeventinformation" VALUES(5910974510924084,'Completed','This event releases locks of expired sessions automatically. ','2018-11-18 10:13:53.004000','2018-11-18 10:13:53.004000','releaseOldLocks')
+COMMIT
+DELETE FROM "system$xasinstance" WHERE "id"=562949953421613
+INSERT INTO "system$xasinstance" VALUES(562949953421613,'9f3a8b01-7b69-4238-8ee0-5c326ed59e44','2018-11-18 09:35:24.859000','2018-11-18 10:15:24.948000',NULL,NULL,NULL)
+COMMIT
+DELETE FROM "system$session" WHERE "id"=7318349394477357
+INSERT INTO "system$session" VALUES(7318349394477357,'cced8455-070c-4b00-b7f0-52f7e4aba5e9','2018-11-18 09:36:46.608000','fbfc5a2f-a7c0-4436-a645-3ef3cf1ddb9f','2018-11-18 10:16:50.323000','68462c46-814c-47d8-ba0a-842241ebf489')
+COMMIT
+INSERT INTO "system$scheduledeventinformation" VALUES(5910974510924085,'Running','This event releases locks of expired sessions automatically. ',NULL,'2018-11-18 10:18:53.001000','releaseOldLocks')
+COMMIT
+DELETE FROM "system$scheduledeventinformation" WHERE "id"=5910974510924085
+INSERT INTO "system$scheduledeventinformation" VALUES(5910974510924085,'Completed','This event releases locks of expired sessions automatically. ','2018-11-18 10:18:53.001000','2018-11-18 10:18:53.001000','releaseOldLocks')
+COMMIT
+DELETE FROM "system$xasinstance" WHERE "id"=562949953421613
+INSERT INTO "system$xasinstance" VALUES(562949953421613,'9f3a8b01-7b69-4238-8ee0-5c326ed59e44','2018-11-18 09:35:24.859000','2018-11-18 10:20:24.965000',NULL,NULL,NULL)
+COMMIT
+DELETE FROM "system$session" WHERE "id"=7318349394477357
+INSERT INTO "system$session" VALUES(7318349394477357,'cced8455-070c-4b00-b7f0-52f7e4aba5e9','2018-11-18 09:36:46.608000','fbfc5a2f-a7c0-4436-a645-3ef3cf1ddb9f','2018-11-18 10:21:50.808000','68462c46-814c-47d8-ba0a-842241ebf489')
+COMMIT
+INSERT INTO "system$scheduledeventinformation" VALUES(5910974510924086,'Running','This event releases locks of expired sessions automatically. ',NULL,'2018-11-18 10:23:53.013000','releaseOldLocks')
+COMMIT
+DELETE FROM "system$scheduledeventinformation" WHERE "id"=5910974510924086
+INSERT INTO "system$scheduledeventinformation" VALUES(5910974510924086,'Completed','This event releases locks of expired sessions automatically. ','2018-11-18 10:23:53.013000','2018-11-18 10:23:53.013000','releaseOldLocks')
+COMMIT
+DELETE FROM "system$xasinstance" WHERE "id"=562949953421613
+INSERT INTO "system$xasinstance" VALUES(562949953421613,'9f3a8b01-7b69-4238-8ee0-5c326ed59e44','2018-11-18 09:35:24.859000','2018-11-18 10:25:24.971000',NULL,NULL,NULL)
+COMMIT
+DELETE FROM "system$session" WHERE "id"=7318349394477357
+INSERT INTO "system$session" VALUES(7318349394477357,'cced8455-070c-4b00-b7f0-52f7e4aba5e9','2018-11-18 09:36:46.608000','fbfc5a2f-a7c0-4436-a645-3ef3cf1ddb9f','2018-11-18 10:26:51.301000','68462c46-814c-47d8-ba0a-842241ebf489')
+COMMIT
+INSERT INTO "system$scheduledeventinformation" VALUES(5910974510924087,'Running','This event releases locks of expired sessions automatically. ',NULL,'2018-11-18 10:28:53.010000','releaseOldLocks')
+COMMIT
+DELETE FROM "system$scheduledeventinformation" WHERE "id"=5910974510924087
+INSERT INTO "system$scheduledeventinformation" VALUES(5910974510924087,'Completed','This event releases locks of expired sessions automatically. ','2018-11-18 10:28:53.010000','2018-11-18 10:28:53.010000','releaseOldLocks')
+COMMIT
+DELETE FROM "system$xasinstance" WHERE "id"=562949953421613
+INSERT INTO "system$xasinstance" VALUES(562949953421613,'9f3a8b01-7b69-4238-8ee0-5c326ed59e44','2018-11-18 09:35:24.859000','2018-11-18 10:30:24.975000',NULL,NULL,NULL)
+COMMIT
+DELETE FROM "system$session" WHERE "id"=7318349394477357
+INSERT INTO "system$session" VALUES(7318349394477357,'cced8455-070c-4b00-b7f0-52f7e4aba5e9','2018-11-18 09:36:46.608000','fbfc5a2f-a7c0-4436-a645-3ef3cf1ddb9f','2018-11-18 10:31:51.698000','68462c46-814c-47d8-ba0a-842241ebf489')
+COMMIT
+INSERT INTO "system$scheduledeventinformation" VALUES(5910974510924088,'Running','This event releases locks of expired sessions automatically. ',NULL,'2018-11-18 10:33:53.010000','releaseOldLocks')
+COMMIT
+DELETE FROM "system$scheduledeventinformation" WHERE "id"=5910974510924088
+INSERT INTO "system$scheduledeventinformation" VALUES(5910974510924088,'Completed','This event releases locks of expired sessions automatically. ','2018-11-18 10:33:53.013000','2018-11-18 10:33:53.010000','releaseOldLocks')
+COMMIT
+DELETE FROM "system$xasinstance" WHERE "id"=562949953421613
+INSERT INTO "system$xasinstance" VALUES(562949953421613,'9f3a8b01-7b69-4238-8ee0-5c326ed59e44','2018-11-18 09:35:24.859000','2018-11-18 10:35:24.980000',NULL,NULL,NULL)
+COMMIT
+DELETE FROM "system$session" WHERE "id"=7318349394477357
+INSERT INTO "system$session" VALUES(7318349394477357,'cced8455-070c-4b00-b7f0-52f7e4aba5e9','2018-11-18 09:36:46.608000','fbfc5a2f-a7c0-4436-a645-3ef3cf1ddb9f','2018-11-18 10:36:52.039000','68462c46-814c-47d8-ba0a-842241ebf489')
+COMMIT
+INSERT INTO "system$scheduledeventinformation" VALUES(5910974510924089,'Running','This event releases locks of expired sessions automatically. ',NULL,'2018-11-18 10:38:53.001000','releaseOldLocks')
+COMMIT
+DELETE FROM "system$scheduledeventinformation" WHERE "id"=5910974510924089
+INSERT INTO "system$scheduledeventinformation" VALUES(5910974510924089,'Completed','This event releases locks of expired sessions automatically. ','2018-11-18 10:38:53.003000','2018-11-18 10:38:53.001000','releaseOldLocks')
+COMMIT
+DELETE FROM "system$xasinstance" WHERE "id"=562949953421613
+INSERT INTO "system$xasinstance" VALUES(562949953421613,'9f3a8b01-7b69-4238-8ee0-5c326ed59e44','2018-11-18 09:35:24.859000','2018-11-18 10:40:24.986000',NULL,NULL,NULL)
+COMMIT
+DELETE FROM "system$session" WHERE "id"=7318349394477357
+INSERT INTO "system$session" VALUES(7318349394477357,'cced8455-070c-4b00-b7f0-52f7e4aba5e9','2018-11-18 09:36:46.608000','fbfc5a2f-a7c0-4436-a645-3ef3cf1ddb9f','2018-11-18 10:41:52.527000','68462c46-814c-47d8-ba0a-842241ebf489')
+COMMIT
+INSERT INTO "system$scheduledeventinformation" VALUES(5910974510924090,'Running','This event releases locks of expired sessions automatically. ',NULL,'2018-11-18 10:43:53.005000','releaseOldLocks')
+COMMIT
+DELETE FROM "system$scheduledeventinformation" WHERE "id"=5910974510924090
+INSERT INTO "system$scheduledeventinformation" VALUES(5910974510924090,'Completed','This event releases locks of expired sessions automatically. ','2018-11-18 10:43:53.007000','2018-11-18 10:43:53.005000','releaseOldLocks')
+COMMIT
+DELETE FROM "system$xasinstance" WHERE "id"=562949953421613
+INSERT INTO "system$xasinstance" VALUES(562949953421613,'9f3a8b01-7b69-4238-8ee0-5c326ed59e44','2018-11-18 09:35:24.859000','2018-11-18 10:45:24.991000',NULL,NULL,NULL)
+COMMIT
+DELETE FROM "system$session" WHERE "id"=7318349394477357
+INSERT INTO "system$session" VALUES(7318349394477357,'cced8455-070c-4b00-b7f0-52f7e4aba5e9','2018-11-18 09:36:46.608000','fbfc5a2f-a7c0-4436-a645-3ef3cf1ddb9f','2018-11-18 10:46:52.992000','68462c46-814c-47d8-ba0a-842241ebf489')
+COMMIT
+INSERT INTO "system$scheduledeventinformation" VALUES(5910974510924091,'Running','This event releases locks of expired sessions automatically. ',NULL,'2018-11-18 10:48:53.017000','releaseOldLocks')
+COMMIT
+DELETE FROM "system$scheduledeventinformation" WHERE "id"=5910974510924091
+INSERT INTO "system$scheduledeventinformation" VALUES(5910974510924091,'Completed','This event releases locks of expired sessions automatically. ','2018-11-18 10:48:53.017000','2018-11-18 10:48:53.017000','releaseOldLocks')
+COMMIT
+DELETE FROM "system$xasinstance" WHERE "id"=562949953421613
+INSERT INTO "system$xasinstance" VALUES(562949953421613,'9f3a8b01-7b69-4238-8ee0-5c326ed59e44','2018-11-18 09:35:24.859000','2018-11-18 10:50:24.995000',NULL,NULL,NULL)
+COMMIT
+DELETE FROM "system$session" WHERE "id"=7318349394477357
+INSERT INTO "system$session" VALUES(7318349394477357,'cced8455-070c-4b00-b7f0-52f7e4aba5e9','2018-11-18 09:36:46.608000','fbfc5a2f-a7c0-4436-a645-3ef3cf1ddb9f','2018-11-18 10:51:53.436000','68462c46-814c-47d8-ba0a-842241ebf489')
+COMMIT
+INSERT INTO "system$scheduledeventinformation" VALUES(5910974510924092,'Running','This event releases locks of expired sessions automatically. ',NULL,'2018-11-18 10:53:53.001000','releaseOldLocks')
+COMMIT
+DELETE FROM "system$scheduledeventinformation" WHERE "id"=5910974510924092
+INSERT INTO "system$scheduledeventinformation" VALUES(5910974510924092,'Completed','This event releases locks of expired sessions automatically. ','2018-11-18 10:53:53.003000','2018-11-18 10:53:53.001000','releaseOldLocks')
+COMMIT
+DELETE FROM "system$xasinstance" WHERE "id"=562949953421613
+INSERT INTO "system$xasinstance" VALUES(562949953421613,'9f3a8b01-7b69-4238-8ee0-5c326ed59e44','2018-11-18 09:35:24.859000','2018-11-18 10:55:25.013000',NULL,NULL,NULL)
+COMMIT
+DELETE FROM "system$session" WHERE "id"=7318349394477357
+INSERT INTO "system$session" VALUES(7318349394477357,'cced8455-070c-4b00-b7f0-52f7e4aba5e9','2018-11-18 09:36:46.608000','fbfc5a2f-a7c0-4436-a645-3ef3cf1ddb9f','2018-11-18 10:56:53.866000','68462c46-814c-47d8-ba0a-842241ebf489')
+COMMIT
+INSERT INTO "system$scheduledeventinformation" VALUES(5910974510924093,'Running','This event releases locks of expired sessions automatically. ',NULL,'2018-11-18 10:58:53.001000','releaseOldLocks')
+COMMIT
+DELETE FROM "system$scheduledeventinformation" WHERE "id"=5910974510924093
+INSERT INTO "system$scheduledeventinformation" VALUES(5910974510924093,'Completed','This event releases locks of expired sessions automatically. ','2018-11-18 10:58:53.003000','2018-11-18 10:58:53.001000','releaseOldLocks')
+COMMIT
+DELETE FROM "system$xasinstance" WHERE "id"=562949953421613
+INSERT INTO "system$xasinstance" VALUES(562949953421613,'9f3a8b01-7b69-4238-8ee0-5c326ed59e44','2018-11-18 09:35:24.859000','2018-11-18 11:00:25.028000',NULL,NULL,NULL)
+COMMIT
+DELETE FROM "system$session" WHERE "id"=7318349394477357
+INSERT INTO "system$session" VALUES(7318349394477357,'cced8455-070c-4b00-b7f0-52f7e4aba5e9','2018-11-18 09:36:46.608000','fbfc5a2f-a7c0-4436-a645-3ef3cf1ddb9f','2018-11-18 11:01:54.366000','68462c46-814c-47d8-ba0a-842241ebf489')
+COMMIT
+INSERT INTO "system$scheduledeventinformation" VALUES(5910974510924094,'Running','This event releases locks of expired sessions automatically. ',NULL,'2018-11-18 11:03:53.005000','releaseOldLocks')
+COMMIT
+DELETE FROM "system$scheduledeventinformation" WHERE "id"=5910974510924094
+INSERT INTO "system$scheduledeventinformation" VALUES(5910974510924094,'Completed','This event releases locks of expired sessions automatically. ','2018-11-18 11:03:53.008000','2018-11-18 11:03:53.005000','releaseOldLocks')
+COMMIT
+DELETE FROM "system$xasinstance" WHERE "id"=562949953421613
+INSERT INTO "system$xasinstance" VALUES(562949953421613,'9f3a8b01-7b69-4238-8ee0-5c326ed59e44','2018-11-18 09:35:24.859000','2018-11-18 11:05:25.039000',NULL,NULL,NULL)
+COMMIT
+DELETE FROM "system$session" WHERE "id"=7318349394477357
+INSERT INTO "system$session" VALUES(7318349394477357,'cced8455-070c-4b00-b7f0-52f7e4aba5e9','2018-11-18 09:36:46.608000','fbfc5a2f-a7c0-4436-a645-3ef3cf1ddb9f','2018-11-18 11:06:54.863000','68462c46-814c-47d8-ba0a-842241ebf489')
+COMMIT
+INSERT INTO "system$scheduledeventinformation" VALUES(5910974510924095,'Running','This event releases locks of expired sessions automatically. ',NULL,'2018-11-18 11:08:53.004000','releaseOldLocks')
+COMMIT
+DELETE FROM "system$scheduledeventinformation" WHERE "id"=5910974510924095
+INSERT INTO "system$scheduledeventinformation" VALUES(5910974510924095,'Completed','This event releases locks of expired sessions automatically. ','2018-11-18 11:08:53.004000','2018-11-18 11:08:53.004000','releaseOldLocks')
+COMMIT
+DELETE FROM "system$xasinstance" WHERE "id"=562949953421613
+INSERT INTO "system$xasinstance" VALUES(562949953421613,'9f3a8b01-7b69-4238-8ee0-5c326ed59e44','2018-11-18 09:35:24.859000','2018-11-18 11:10:25.043000',NULL,NULL,NULL)
+COMMIT
+DELETE FROM "system$session" WHERE "id"=7318349394477357
+INSERT INTO "system$session" VALUES(7318349394477357,'cced8455-070c-4b00-b7f0-52f7e4aba5e9','2018-11-18 09:36:46.608000','fbfc5a2f-a7c0-4436-a645-3ef3cf1ddb9f','2018-11-18 11:11:55.366000','68462c46-814c-47d8-ba0a-842241ebf489')
+COMMIT
+INSERT INTO "system$scheduledeventinformation" VALUES(5910974510924096,'Running','This event releases locks of expired sessions automatically. ',NULL,'2018-11-18 11:13:53.001000','releaseOldLocks')
+COMMIT
+DELETE FROM "system$scheduledeventinformation" WHERE "id"=5910974510924096
+INSERT INTO "system$scheduledeventinformation" VALUES(5910974510924096,'Completed','This event releases locks of expired sessions automatically. ','2018-11-18 11:13:53.003000','2018-11-18 11:13:53.001000','releaseOldLocks')
+COMMIT
+DELETE FROM "system$xasinstance" WHERE "id"=562949953421613
+INSERT INTO "system$xasinstance" VALUES(562949953421613,'9f3a8b01-7b69-4238-8ee0-5c326ed59e44','2018-11-18 09:35:24.859000','2018-11-18 11:15:25.051000',NULL,NULL,NULL)
+COMMIT
+DELETE FROM "system$session" WHERE "id"=7318349394477357
+INSERT INTO "system$session" VALUES(7318349394477357,'cced8455-070c-4b00-b7f0-52f7e4aba5e9','2018-11-18 09:36:46.608000','fbfc5a2f-a7c0-4436-a645-3ef3cf1ddb9f','2018-11-18 11:16:55.845000','68462c46-814c-47d8-ba0a-842241ebf489')
+COMMIT
+INSERT INTO "system$scheduledeventinformation" VALUES(5910974510924097,'Running','This event releases locks of expired sessions automatically. ',NULL,'2018-11-18 11:18:53.001000','releaseOldLocks')
+COMMIT
+DELETE FROM "system$scheduledeventinformation" WHERE "id"=5910974510924097
+INSERT INTO "system$scheduledeventinformation" VALUES(5910974510924097,'Completed','This event releases locks of expired sessions automatically. ','2018-11-18 11:18:53.001000','2018-11-18 11:18:53.001000','releaseOldLocks')
+COMMIT
+DELETE FROM "system$xasinstance" WHERE "id"=562949953421613
+INSERT INTO "system$xasinstance" VALUES(562949953421613,'9f3a8b01-7b69-4238-8ee0-5c326ed59e44','2018-11-18 09:35:24.859000','2018-11-18 11:20:25.062000',NULL,NULL,NULL)
+COMMIT
+DELETE FROM "system$session" WHERE "id"=7318349394477357
+INSERT INTO "system$session" VALUES(7318349394477357,'cced8455-070c-4b00-b7f0-52f7e4aba5e9','2018-11-18 09:36:46.608000','fbfc5a2f-a7c0-4436-a645-3ef3cf1ddb9f','2018-11-18 11:21:56.351000','68462c46-814c-47d8-ba0a-842241ebf489')
+COMMIT
+INSERT INTO "system$scheduledeventinformation" VALUES(5910974510924098,'Running','This event releases locks of expired sessions automatically. ',NULL,'2018-11-18 11:23:53.015000','releaseOldLocks')
+COMMIT
+DELETE FROM "system$scheduledeventinformation" WHERE "id"=5910974510924098
+INSERT INTO "system$scheduledeventinformation" VALUES(5910974510924098,'Completed','This event releases locks of expired sessions automatically. ','2018-11-18 11:23:53.017000','2018-11-18 11:23:53.015000','releaseOldLocks')
+COMMIT
+DELETE FROM "system$xasinstance" WHERE "id"=562949953421613
+INSERT INTO "system$xasinstance" VALUES(562949953421613,'9f3a8b01-7b69-4238-8ee0-5c326ed59e44','2018-11-18 09:35:24.859000','2018-11-18 11:25:25.067000',NULL,NULL,NULL)
+COMMIT
+DELETE FROM "system$session" WHERE "id"=7318349394477357
+INSERT INTO "system$session" VALUES(7318349394477357,'cced8455-070c-4b00-b7f0-52f7e4aba5e9','2018-11-18 09:36:46.608000','fbfc5a2f-a7c0-4436-a645-3ef3cf1ddb9f','2018-11-18 11:26:56.866000','68462c46-814c-47d8-ba0a-842241ebf489')
+COMMIT
+INSERT INTO "system$scheduledeventinformation" VALUES(5910974510924099,'Running','This event releases locks of expired sessions automatically. ',NULL,'2018-11-18 11:28:53.011000','releaseOldLocks')
+COMMIT
+DELETE FROM "system$scheduledeventinformation" WHERE "id"=5910974510924099
+INSERT INTO "system$scheduledeventinformation" VALUES(5910974510924099,'Completed','This event releases locks of expired sessions automatically. ','2018-11-18 11:28:53.013000','2018-11-18 11:28:53.011000','releaseOldLocks')
+COMMIT
+DELETE FROM "system$xasinstance" WHERE "id"=562949953421613
+INSERT INTO "system$xasinstance" VALUES(562949953421613,'9f3a8b01-7b69-4238-8ee0-5c326ed59e44','2018-11-18 09:35:24.859000','2018-11-18 11:30:25.070000',NULL,NULL,NULL)
+COMMIT
+DELETE FROM "system$session" WHERE "id"=7318349394477357
+INSERT INTO "system$session" VALUES(7318349394477357,'cced8455-070c-4b00-b7f0-52f7e4aba5e9','2018-11-18 09:36:46.608000','fbfc5a2f-a7c0-4436-a645-3ef3cf1ddb9f','2018-11-18 11:31:57.349000','68462c46-814c-47d8-ba0a-842241ebf489')
+COMMIT
+INSERT INTO "system$scheduledeventinformation" VALUES(5910974510924100,'Running','This event releases locks of expired sessions automatically. ',NULL,'2018-11-18 11:33:53.005000','releaseOldLocks')
+COMMIT
+DELETE FROM "system$scheduledeventinformation" WHERE "id"=5910974510924100
+INSERT INTO "system$scheduledeventinformation" VALUES(5910974510924100,'Completed','This event releases locks of expired sessions automatically. ','2018-11-18 11:33:53.005000','2018-11-18 11:33:53.005000','releaseOldLocks')
+COMMIT
+DELETE FROM "system$xasinstance" WHERE "id"=562949953421613
+INSERT INTO "system$xasinstance" VALUES(562949953421613,'9f3a8b01-7b69-4238-8ee0-5c326ed59e44','2018-11-18 09:35:24.859000','2018-11-18 11:35:25.086000',NULL,NULL,NULL)
+COMMIT
+DELETE FROM "system$session" WHERE "id"=7318349394477357
+INSERT INTO "system$session" VALUES(7318349394477357,'cced8455-070c-4b00-b7f0-52f7e4aba5e9','2018-11-18 09:36:46.608000','fbfc5a2f-a7c0-4436-a645-3ef3cf1ddb9f','2018-11-18 11:36:57.826000','68462c46-814c-47d8-ba0a-842241ebf489')
+COMMIT
+INSERT INTO "system$scheduledeventinformation" VALUES(5910974510924101,'Running','This event releases locks of expired sessions automatically. ',NULL,'2018-11-18 11:38:53.001000','releaseOldLocks')
+COMMIT
+DELETE FROM "system$scheduledeventinformation" WHERE "id"=5910974510924101
+INSERT INTO "system$scheduledeventinformation" VALUES(5910974510924101,'Completed','This event releases locks of expired sessions automatically. ','2018-11-18 11:38:53.003000','2018-11-18 11:38:53.001000','releaseOldLocks')
+COMMIT
+DELETE FROM "system$xasinstance" WHERE "id"=562949953421613
+INSERT INTO "system$xasinstance" VALUES(562949953421613,'9f3a8b01-7b69-4238-8ee0-5c326ed59e44','2018-11-18 09:35:24.859000','2018-11-18 11:40:25.090000',NULL,NULL,NULL)
+COMMIT
+DELETE FROM "system$session" WHERE "id"=7318349394477357
+INSERT INTO "system$session" VALUES(7318349394477357,'cced8455-070c-4b00-b7f0-52f7e4aba5e9','2018-11-18 09:36:46.608000','fbfc5a2f-a7c0-4436-a645-3ef3cf1ddb9f','2018-11-18 11:41:58.338000','68462c46-814c-47d8-ba0a-842241ebf489')
+COMMIT
+INSERT INTO "system$scheduledeventinformation" VALUES(5910974510924102,'Running','This event releases locks of expired sessions automatically. ',NULL,'2018-11-18 11:43:53.001000','releaseOldLocks')
+COMMIT
+DELETE FROM "system$scheduledeventinformation" WHERE "id"=5910974510924102
+INSERT INTO "system$scheduledeventinformation" VALUES(5910974510924102,'Completed','This event releases locks of expired sessions automatically. ','2018-11-18 11:43:53.003000','2018-11-18 11:43:53.001000','releaseOldLocks')
+COMMIT
+DELETE FROM "system$xasinstance" WHERE "id"=562949953421613
+INSERT INTO "system$xasinstance" VALUES(562949953421613,'9f3a8b01-7b69-4238-8ee0-5c326ed59e44','2018-11-18 09:35:24.859000','2018-11-18 11:45:25.094000',NULL,NULL,NULL)
+COMMIT
+DELETE FROM "system$session" WHERE "id"=7318349394477357
+INSERT INTO "system$session" VALUES(7318349394477357,'cced8455-070c-4b00-b7f0-52f7e4aba5e9','2018-11-18 09:36:46.608000','fbfc5a2f-a7c0-4436-a645-3ef3cf1ddb9f','2018-11-18 11:46:58.818000','68462c46-814c-47d8-ba0a-842241ebf489')
+COMMIT
+INSERT INTO "system$scheduledeventinformation" VALUES(5910974510924103,'Running','This event releases locks of expired sessions automatically. ',NULL,'2018-11-18 11:48:53.002000','releaseOldLocks')
+COMMIT
+DELETE FROM "system$scheduledeventinformation" WHERE "id"=5910974510924103
+INSERT INTO "system$scheduledeventinformation" VALUES(5910974510924103,'Completed','This event releases locks of expired sessions automatically. ','2018-11-18 11:48:53.004000','2018-11-18 11:48:53.002000','releaseOldLocks')
+COMMIT
+DELETE FROM "system$xasinstance" WHERE "id"=562949953421613
+INSERT INTO "system$xasinstance" VALUES(562949953421613,'9f3a8b01-7b69-4238-8ee0-5c326ed59e44','2018-11-18 09:35:24.859000','2018-11-18 11:50:25.112000',NULL,NULL,NULL)
+COMMIT
+DELETE FROM "system$session" WHERE "id"=7318349394477357
+INSERT INTO "system$session" VALUES(7318349394477357,'cced8455-070c-4b00-b7f0-52f7e4aba5e9','2018-11-18 09:36:46.608000','fbfc5a2f-a7c0-4436-a645-3ef3cf1ddb9f','2018-11-18 11:51:59.305000','68462c46-814c-47d8-ba0a-842241ebf489')
+COMMIT
+INSERT INTO "system$scheduledeventinformation" VALUES(5910974510924104,'Running','This event releases locks of expired sessions automatically. ',NULL,'2018-11-18 11:53:53.001000','releaseOldLocks')
+COMMIT
+DELETE FROM "system$scheduledeventinformation" WHERE "id"=5910974510924104
+INSERT INTO "system$scheduledeventinformation" VALUES(5910974510924104,'Completed','This event releases locks of expired sessions automatically. ','2018-11-18 11:53:53.003000','2018-11-18 11:53:53.001000','releaseOldLocks')
+COMMIT
+DELETE FROM "system$xasinstance" WHERE "id"=562949953421613
+INSERT INTO "system$xasinstance" VALUES(562949953421613,'9f3a8b01-7b69-4238-8ee0-5c326ed59e44','2018-11-18 09:35:24.859000','2018-11-18 11:55:25.115000',NULL,NULL,NULL)
+COMMIT
+DELETE FROM "system$session" WHERE "id"=7318349394477357
+INSERT INTO "system$session" VALUES(7318349394477357,'cced8455-070c-4b00-b7f0-52f7e4aba5e9','2018-11-18 09:36:46.608000','fbfc5a2f-a7c0-4436-a645-3ef3cf1ddb9f','2018-11-18 11:56:59.455000','68462c46-814c-47d8-ba0a-842241ebf489')
+COMMIT
+INSERT INTO "system$scheduledeventinformation" VALUES(5910974510924105,'Running','This event releases locks of expired sessions automatically. ',NULL,'2018-11-18 11:58:53.001000','releaseOldLocks')
+COMMIT
+DELETE FROM "system$scheduledeventinformation" WHERE "id"=5910974510924105
+INSERT INTO "system$scheduledeventinformation" VALUES(5910974510924105,'Completed','This event releases locks of expired sessions automatically. ','2018-11-18 11:58:53.003000','2018-11-18 11:58:53.001000','releaseOldLocks')
+COMMIT
+DELETE FROM "system$xasinstance" WHERE "id"=562949953421613
+INSERT INTO "system$xasinstance" VALUES(562949953421613,'9f3a8b01-7b69-4238-8ee0-5c326ed59e44','2018-11-18 09:35:24.859000','2018-11-18 12:00:25.128000',NULL,NULL,NULL)
+COMMIT
+DELETE FROM "system$session" WHERE "id"=7318349394477357
+INSERT INTO "system$session" VALUES(7318349394477357,'cced8455-070c-4b00-b7f0-52f7e4aba5e9','2018-11-18 09:36:46.608000','fbfc5a2f-a7c0-4436-a645-3ef3cf1ddb9f','2018-11-18 12:01:59.640000','68462c46-814c-47d8-ba0a-842241ebf489')
+COMMIT
+INSERT INTO "system$scheduledeventinformation" VALUES(5910974510924106,'Running','This event releases locks of expired sessions automatically. ',NULL,'2018-11-18 12:03:53.001000','releaseOldLocks')
+COMMIT
+DELETE FROM "system$scheduledeventinformation" WHERE "id"=5910974510924106
+INSERT INTO "system$scheduledeventinformation" VALUES(5910974510924106,'Completed','This event releases locks of expired sessions automatically. ','2018-11-18 12:03:53.003000','2018-11-18 12:03:53.001000','releaseOldLocks')
+COMMIT
+DELETE FROM "system$xasinstance" WHERE "id"=562949953421613
+INSERT INTO "system$xasinstance" VALUES(562949953421613,'9f3a8b01-7b69-4238-8ee0-5c326ed59e44','2018-11-18 09:35:24.859000','2018-11-18 12:05:25.132000',NULL,NULL,NULL)
+COMMIT
+DELETE FROM "system$session" WHERE "id"=7318349394477357
+INSERT INTO "system$session" VALUES(7318349394477357,'cced8455-070c-4b00-b7f0-52f7e4aba5e9','2018-11-18 09:36:46.608000','fbfc5a2f-a7c0-4436-a645-3ef3cf1ddb9f','2018-11-18 12:06:59.814000','68462c46-814c-47d8-ba0a-842241ebf489')
+COMMIT
+INSERT INTO "system$scheduledeventinformation" VALUES(5910974510924107,'Running','This event releases locks of expired sessions automatically. ',NULL,'2018-11-18 12:08:53.002000','releaseOldLocks')
+COMMIT
+DELETE FROM "system$scheduledeventinformation" WHERE "id"=5910974510924107
+INSERT INTO "system$scheduledeventinformation" VALUES(5910974510924107,'Completed','This event releases locks of expired sessions automatically. ','2018-11-18 12:08:53.004000','2018-11-18 12:08:53.002000','releaseOldLocks')
+COMMIT
+DELETE FROM "system$xasinstance" WHERE "id"=562949953421613
+INSERT INTO "system$xasinstance" VALUES(562949953421613,'9f3a8b01-7b69-4238-8ee0-5c326ed59e44','2018-11-18 09:35:24.859000','2018-11-18 12:10:25.135000',NULL,NULL,NULL)
+COMMIT
+DELETE FROM "system$session" WHERE "id"=7318349394477357
+INSERT INTO "system$session" VALUES(7318349394477357,'cced8455-070c-4b00-b7f0-52f7e4aba5e9','2018-11-18 09:36:46.608000','fbfc5a2f-a7c0-4436-a645-3ef3cf1ddb9f','2018-11-18 12:11:59.929000','68462c46-814c-47d8-ba0a-842241ebf489')
+COMMIT
+INSERT INTO "system$scheduledeventinformation" VALUES(5910974510924108,'Running','This event releases locks of expired sessions automatically. ',NULL,'2018-11-18 12:13:53.001000','releaseOldLocks')
+COMMIT
+DELETE FROM "system$scheduledeventinformation" WHERE "id"=5910974510924108
+INSERT INTO "system$scheduledeventinformation" VALUES(5910974510924108,'Completed','This event releases locks of expired sessions automatically. ','2018-11-18 12:13:53.003000','2018-11-18 12:13:53.001000','releaseOldLocks')
+COMMIT
+DELETE FROM "system$xasinstance" WHERE "id"=562949953421613
+INSERT INTO "system$xasinstance" VALUES(562949953421613,'9f3a8b01-7b69-4238-8ee0-5c326ed59e44','2018-11-18 09:35:24.859000','2018-11-18 12:15:25.139000',NULL,NULL,NULL)
+COMMIT
+DELETE FROM "system$session" WHERE "id"=7318349394477357
+INSERT INTO "system$session" VALUES(7318349394477357,'cced8455-070c-4b00-b7f0-52f7e4aba5e9','2018-11-18 09:36:46.608000','fbfc5a2f-a7c0-4436-a645-3ef3cf1ddb9f','2018-11-18 12:17:00.044000','68462c46-814c-47d8-ba0a-842241ebf489')
+COMMIT
+INSERT INTO "system$scheduledeventinformation" VALUES(5910974510924109,'Running','This event releases locks of expired sessions automatically. ',NULL,'2018-11-18 12:18:53.000000','releaseOldLocks')
+COMMIT
+DELETE FROM "system$scheduledeventinformation" WHERE "id"=5910974510924109
+INSERT INTO "system$scheduledeventinformation" VALUES(5910974510924109,'Completed','This event releases locks of expired sessions automatically. ','2018-11-18 12:18:53.001000','2018-11-18 12:18:53.000000','releaseOldLocks')
+COMMIT
+DELETE FROM "system$xasinstance" WHERE "id"=562949953421613
+INSERT INTO "system$xasinstance" VALUES(562949953421613,'9f3a8b01-7b69-4238-8ee0-5c326ed59e44','2018-11-18 09:35:24.859000','2018-11-18 12:20:25.142000',NULL,NULL,NULL)
+COMMIT
+DELETE FROM "system$session" WHERE "id"=7318349394477357
+INSERT INTO "system$session" VALUES(7318349394477357,'cced8455-070c-4b00-b7f0-52f7e4aba5e9','2018-11-18 09:36:46.608000','fbfc5a2f-a7c0-4436-a645-3ef3cf1ddb9f','2018-11-18 12:22:00.154000','68462c46-814c-47d8-ba0a-842241ebf489')
+COMMIT
+INSERT INTO "system$scheduledeventinformation" VALUES(5910974510924110,'Running','This event releases locks of expired sessions automatically. ',NULL,'2018-11-18 12:23:53.001000','releaseOldLocks')
+COMMIT
+DELETE FROM "system$scheduledeventinformation" WHERE "id"=5910974510924110
+INSERT INTO "system$scheduledeventinformation" VALUES(5910974510924110,'Completed','This event releases locks of expired sessions automatically. ','2018-11-18 12:23:53.003000','2018-11-18 12:23:53.001000','releaseOldLocks')
+COMMIT
+DELETE FROM "system$xasinstance" WHERE "id"=562949953421613
+INSERT INTO "system$xasinstance" VALUES(562949953421613,'9f3a8b01-7b69-4238-8ee0-5c326ed59e44','2018-11-18 09:35:24.859000','2018-11-18 12:25:25.145000',NULL,NULL,NULL)
+COMMIT
+DELETE FROM "system$session" WHERE "id"=7318349394477357
+INSERT INTO "system$session" VALUES(7318349394477357,'cced8455-070c-4b00-b7f0-52f7e4aba5e9','2018-11-18 09:36:46.608000','fbfc5a2f-a7c0-4436-a645-3ef3cf1ddb9f','2018-11-18 12:27:00.269000','68462c46-814c-47d8-ba0a-842241ebf489')
+COMMIT
+INSERT INTO "system$scheduledeventinformation" VALUES(5910974510924111,'Running','This event releases locks of expired sessions automatically. ',NULL,'2018-11-18 12:28:53.000000','releaseOldLocks')
+COMMIT
+DELETE FROM "system$scheduledeventinformation" WHERE "id"=5910974510924111
+INSERT INTO "system$scheduledeventinformation" VALUES(5910974510924111,'Completed','This event releases locks of expired sessions automatically. ','2018-11-18 12:28:53.002000','2018-11-18 12:28:53.000000','releaseOldLocks')
+COMMIT
+DELETE FROM "system$xasinstance" WHERE "id"=562949953421613
+INSERT INTO "system$xasinstance" VALUES(562949953421613,'9f3a8b01-7b69-4238-8ee0-5c326ed59e44','2018-11-18 09:35:24.859000','2018-11-18 12:30:25.149000',NULL,NULL,NULL)
+COMMIT
+DELETE FROM "system$session" WHERE "id"=7318349394477357
+INSERT INTO "system$session" VALUES(7318349394477357,'cced8455-070c-4b00-b7f0-52f7e4aba5e9','2018-11-18 09:36:46.608000','fbfc5a2f-a7c0-4436-a645-3ef3cf1ddb9f','2018-11-18 12:32:00.380000','68462c46-814c-47d8-ba0a-842241ebf489')
+COMMIT
+INSERT INTO "system$scheduledeventinformation" VALUES(5910974510924112,'Running','This event releases locks of expired sessions automatically. ',NULL,'2018-11-18 12:33:53.001000','releaseOldLocks')
+COMMIT
+DELETE FROM "system$scheduledeventinformation" WHERE "id"=5910974510924112
+INSERT INTO "system$scheduledeventinformation" VALUES(5910974510924112,'Completed','This event releases locks of expired sessions automatically. ','2018-11-18 12:33:53.002000','2018-11-18 12:33:53.001000','releaseOldLocks')
+COMMIT
+DELETE FROM "system$xasinstance" WHERE "id"=562949953421613
+INSERT INTO "system$xasinstance" VALUES(562949953421613,'9f3a8b01-7b69-4238-8ee0-5c326ed59e44','2018-11-18 09:35:24.859000','2018-11-18 12:35:25.152000',NULL,NULL,NULL)
+COMMIT
+DELETE FROM "system$session" WHERE "id"=7318349394477357
+INSERT INTO "system$session" VALUES(7318349394477357,'cced8455-070c-4b00-b7f0-52f7e4aba5e9','2018-11-18 09:36:46.608000','fbfc5a2f-a7c0-4436-a645-3ef3cf1ddb9f','2018-11-18 12:37:00.492000','68462c46-814c-47d8-ba0a-842241ebf489')
+COMMIT
+INSERT INTO "system$scheduledeventinformation" VALUES(5910974510924113,'Running','This event releases locks of expired sessions automatically. ',NULL,'2018-11-18 12:38:53.001000','releaseOldLocks')
+COMMIT
+DELETE FROM "system$scheduledeventinformation" WHERE "id"=5910974510924113
+INSERT INTO "system$scheduledeventinformation" VALUES(5910974510924113,'Completed','This event releases locks of expired sessions automatically. ','2018-11-18 12:38:53.003000','2018-11-18 12:38:53.001000','releaseOldLocks')
+COMMIT
+DELETE FROM "system$xasinstance" WHERE "id"=562949953421613
+INSERT INTO "system$xasinstance" VALUES(562949953421613,'9f3a8b01-7b69-4238-8ee0-5c326ed59e44','2018-11-18 09:35:24.859000','2018-11-18 12:40:25.155000',NULL,NULL,NULL)
+COMMIT
+DELETE FROM "system$session" WHERE "id"=7318349394477357
+INSERT INTO "system$session" VALUES(7318349394477357,'cced8455-070c-4b00-b7f0-52f7e4aba5e9','2018-11-18 09:36:46.608000','fbfc5a2f-a7c0-4436-a645-3ef3cf1ddb9f','2018-11-18 12:42:00.605000','68462c46-814c-47d8-ba0a-842241ebf489')
+COMMIT
+INSERT INTO "system$scheduledeventinformation" VALUES(5910974510924114,'Running','This event releases locks of expired sessions automatically. ',NULL,'2018-11-18 12:43:53.001000','releaseOldLocks')
+COMMIT
+DELETE FROM "system$scheduledeventinformation" WHERE "id"=5910974510924114
+INSERT INTO "system$scheduledeventinformation" VALUES(5910974510924114,'Completed','This event releases locks of expired sessions automatically. ','2018-11-18 12:43:53.002000','2018-11-18 12:43:53.001000','releaseOldLocks')
+COMMIT
+DELETE FROM "system$xasinstance" WHERE "id"=562949953421613
+INSERT INTO "system$xasinstance" VALUES(562949953421613,'9f3a8b01-7b69-4238-8ee0-5c326ed59e44','2018-11-18 09:35:24.859000','2018-11-18 12:45:25.159000',NULL,NULL,NULL)
+COMMIT
+DELETE FROM "system$session" WHERE "id"=7318349394477357
+INSERT INTO "system$session" VALUES(7318349394477357,'cced8455-070c-4b00-b7f0-52f7e4aba5e9','2018-11-18 09:36:46.608000','fbfc5a2f-a7c0-4436-a645-3ef3cf1ddb9f','2018-11-18 12:47:00.717000','68462c46-814c-47d8-ba0a-842241ebf489')
+COMMIT
+INSERT INTO "system$scheduledeventinformation" VALUES(5910974510924115,'Running','This event releases locks of expired sessions automatically. ',NULL,'2018-11-18 12:48:53.001000','releaseOldLocks')
+COMMIT
+DELETE FROM "system$scheduledeventinformation" WHERE "id"=5910974510924115
+INSERT INTO "system$scheduledeventinformation" VALUES(5910974510924115,'Completed','This event releases locks of expired sessions automatically. ','2018-11-18 12:48:53.002000','2018-11-18 12:48:53.001000','releaseOldLocks')
+COMMIT
+DELETE FROM "system$xasinstance" WHERE "id"=562949953421613
+INSERT INTO "system$xasinstance" VALUES(562949953421613,'9f3a8b01-7b69-4238-8ee0-5c326ed59e44','2018-11-18 09:35:24.859000','2018-11-18 12:50:25.162000',NULL,NULL,NULL)
+COMMIT
+DELETE FROM "system$session" WHERE "id"=7318349394477357
+INSERT INTO "system$session" VALUES(7318349394477357,'cced8455-070c-4b00-b7f0-52f7e4aba5e9','2018-11-18 09:36:46.608000','fbfc5a2f-a7c0-4436-a645-3ef3cf1ddb9f','2018-11-18 12:52:00.852000','68462c46-814c-47d8-ba0a-842241ebf489')
+COMMIT
+INSERT INTO "system$scheduledeventinformation" VALUES(5910974510924116,'Running','This event releases locks of expired sessions automatically. ',NULL,'2018-11-18 12:53:53.001000','releaseOldLocks')
+COMMIT
+DELETE FROM "system$scheduledeventinformation" WHERE "id"=5910974510924116
+INSERT INTO "system$scheduledeventinformation" VALUES(5910974510924116,'Completed','This event releases locks of expired sessions automatically. ','2018-11-18 12:53:53.002000','2018-11-18 12:53:53.001000','releaseOldLocks')
+COMMIT
+DELETE FROM "system$xasinstance" WHERE "id"=562949953421613
+INSERT INTO "system$xasinstance" VALUES(562949953421613,'9f3a8b01-7b69-4238-8ee0-5c326ed59e44','2018-11-18 09:35:24.859000','2018-11-18 12:55:25.165000',NULL,NULL,NULL)
+COMMIT
+DELETE FROM "system$session" WHERE "id"=7318349394477357
+INSERT INTO "system$session" VALUES(7318349394477357,'cced8455-070c-4b00-b7f0-52f7e4aba5e9','2018-11-18 09:36:46.608000','fbfc5a2f-a7c0-4436-a645-3ef3cf1ddb9f','2018-11-18 12:57:01.002000','68462c46-814c-47d8-ba0a-842241ebf489')
+COMMIT
+INSERT INTO "system$scheduledeventinformation" VALUES(5910974510924117,'Running','This event releases locks of expired sessions automatically. ',NULL,'2018-11-18 12:58:53.001000','releaseOldLocks')
+COMMIT
+DELETE FROM "system$scheduledeventinformation" WHERE "id"=5910974510924117
+INSERT INTO "system$scheduledeventinformation" VALUES(5910974510924117,'Completed','This event releases locks of expired sessions automatically. ','2018-11-18 12:58:53.003000','2018-11-18 12:58:53.001000','releaseOldLocks')
+COMMIT
+DELETE FROM "system$xasinstance" WHERE "id"=562949953421613
+INSERT INTO "system$xasinstance" VALUES(562949953421613,'9f3a8b01-7b69-4238-8ee0-5c326ed59e44','2018-11-18 09:35:24.859000','2018-11-18 13:00:25.168000',NULL,NULL,NULL)
+COMMIT
+DELETE FROM "system$session" WHERE "id"=7318349394477357
+INSERT INTO "system$session" VALUES(7318349394477357,'cced8455-070c-4b00-b7f0-52f7e4aba5e9','2018-11-18 09:36:46.608000','fbfc5a2f-a7c0-4436-a645-3ef3cf1ddb9f','2018-11-18 13:02:01.121000','68462c46-814c-47d8-ba0a-842241ebf489')
+COMMIT
+INSERT INTO "system$scheduledeventinformation" VALUES(5910974510924118,'Running','This event releases locks of expired sessions automatically. ',NULL,'2018-11-18 13:03:53.001000','releaseOldLocks')
+COMMIT
+DELETE FROM "system$scheduledeventinformation" WHERE "id"=5910974510924118
+INSERT INTO "system$scheduledeventinformation" VALUES(5910974510924118,'Completed','This event releases locks of expired sessions automatically. ','2018-11-18 13:03:53.002000','2018-11-18 13:03:53.001000','releaseOldLocks')
+COMMIT
+DELETE FROM "system$xasinstance" WHERE "id"=562949953421613
+INSERT INTO "system$xasinstance" VALUES(562949953421613,'9f3a8b01-7b69-4238-8ee0-5c326ed59e44','2018-11-18 09:35:24.859000','2018-11-18 13:05:25.172000',NULL,NULL,NULL)
+COMMIT
+DELETE FROM "system$session" WHERE "id"=7318349394477357
+INSERT INTO "system$session" VALUES(7318349394477357,'cced8455-070c-4b00-b7f0-52f7e4aba5e9','2018-11-18 09:36:46.608000','fbfc5a2f-a7c0-4436-a645-3ef3cf1ddb9f','2018-11-18 13:07:01.245000','68462c46-814c-47d8-ba0a-842241ebf489')
+COMMIT
+INSERT INTO "system$scheduledeventinformation" VALUES(5910974510924119,'Running','This event releases locks of expired sessions automatically. ',NULL,'2018-11-18 13:08:53.001000','releaseOldLocks')
+COMMIT
+DELETE FROM "system$scheduledeventinformation" WHERE "id"=5910974510924119
+INSERT INTO "system$scheduledeventinformation" VALUES(5910974510924119,'Completed','This event releases locks of expired sessions automatically. ','2018-11-18 13:08:53.002000','2018-11-18 13:08:53.001000','releaseOldLocks')
+COMMIT
+DELETE FROM "system$xasinstance" WHERE "id"=562949953421613
+INSERT INTO "system$xasinstance" VALUES(562949953421613,'9f3a8b01-7b69-4238-8ee0-5c326ed59e44','2018-11-18 09:35:24.859000','2018-11-18 13:10:25.175000',NULL,NULL,NULL)
+COMMIT
+DELETE FROM "system$session" WHERE "id"=7318349394477357
+INSERT INTO "system$session" VALUES(7318349394477357,'cced8455-070c-4b00-b7f0-52f7e4aba5e9','2018-11-18 09:36:46.608000','fbfc5a2f-a7c0-4436-a645-3ef3cf1ddb9f','2018-11-18 13:12:01.357000','68462c46-814c-47d8-ba0a-842241ebf489')
+COMMIT
+INSERT INTO "system$scheduledeventinformation" VALUES(5910974510924120,'Running','This event releases locks of expired sessions automatically. ',NULL,'2018-11-18 13:13:53.001000','releaseOldLocks')
+COMMIT
+DELETE FROM "system$scheduledeventinformation" WHERE "id"=5910974510924120
+INSERT INTO "system$scheduledeventinformation" VALUES(5910974510924120,'Completed','This event releases locks of expired sessions automatically. ','2018-11-18 13:13:53.002000','2018-11-18 13:13:53.001000','releaseOldLocks')
+COMMIT
+DELETE FROM "system$xasinstance" WHERE "id"=562949953421613
+INSERT INTO "system$xasinstance" VALUES(562949953421613,'9f3a8b01-7b69-4238-8ee0-5c326ed59e44','2018-11-18 09:35:24.859000','2018-11-18 13:15:25.179000',NULL,NULL,NULL)
+COMMIT
+DELETE FROM "system$session" WHERE "id"=7318349394477357
+INSERT INTO "system$session" VALUES(7318349394477357,'cced8455-070c-4b00-b7f0-52f7e4aba5e9','2018-11-18 09:36:46.608000','fbfc5a2f-a7c0-4436-a645-3ef3cf1ddb9f','2018-11-18 13:17:01.473000','68462c46-814c-47d8-ba0a-842241ebf489')
+COMMIT
+INSERT INTO "system$scheduledeventinformation" VALUES(5910974510924121,'Running','This event releases locks of expired sessions automatically. ',NULL,'2018-11-18 13:18:53.001000','releaseOldLocks')
+COMMIT
+DELETE FROM "system$scheduledeventinformation" WHERE "id"=5910974510924121
+INSERT INTO "system$scheduledeventinformation" VALUES(5910974510924121,'Completed','This event releases locks of expired sessions automatically. ','2018-11-18 13:18:53.002000','2018-11-18 13:18:53.001000','releaseOldLocks')
+COMMIT
+DELETE FROM "system$xasinstance" WHERE "id"=562949953421613
+INSERT INTO "system$xasinstance" VALUES(562949953421613,'9f3a8b01-7b69-4238-8ee0-5c326ed59e44','2018-11-18 09:35:24.859000','2018-11-18 13:20:25.182000',NULL,NULL,NULL)
+COMMIT
+DELETE FROM "system$session" WHERE "id"=7318349394477357
+INSERT INTO "system$session" VALUES(7318349394477357,'cced8455-070c-4b00-b7f0-52f7e4aba5e9','2018-11-18 09:36:46.608000','fbfc5a2f-a7c0-4436-a645-3ef3cf1ddb9f','2018-11-18 13:22:01.593000','68462c46-814c-47d8-ba0a-842241ebf489')
+COMMIT
+INSERT INTO "system$scheduledeventinformation" VALUES(5910974510924122,'Running','This event releases locks of expired sessions automatically. ',NULL,'2018-11-18 13:23:53.001000','releaseOldLocks')
+COMMIT
+DELETE FROM "system$scheduledeventinformation" WHERE "id"=5910974510924122
+INSERT INTO "system$scheduledeventinformation" VALUES(5910974510924122,'Completed','This event releases locks of expired sessions automatically. ','2018-11-18 13:23:53.002000','2018-11-18 13:23:53.001000','releaseOldLocks')
+COMMIT
+DELETE FROM "system$xasinstance" WHERE "id"=562949953421613
+INSERT INTO "system$xasinstance" VALUES(562949953421613,'9f3a8b01-7b69-4238-8ee0-5c326ed59e44','2018-11-18 09:35:24.859000','2018-11-18 13:25:25.185000',NULL,NULL,NULL)
+COMMIT
+DELETE FROM "system$session" WHERE "id"=7318349394477357
+INSERT INTO "system$session" VALUES(7318349394477357,'cced8455-070c-4b00-b7f0-52f7e4aba5e9','2018-11-18 09:36:46.608000','fbfc5a2f-a7c0-4436-a645-3ef3cf1ddb9f','2018-11-18 13:27:01.724000','68462c46-814c-47d8-ba0a-842241ebf489')
+COMMIT
+INSERT INTO "system$scheduledeventinformation" VALUES(5910974510924123,'Running','This event releases locks of expired sessions automatically. ',NULL,'2018-11-18 13:28:53.001000','releaseOldLocks')
+COMMIT
+DELETE FROM "system$scheduledeventinformation" WHERE "id"=5910974510924123
+INSERT INTO "system$scheduledeventinformation" VALUES(5910974510924123,'Completed','This event releases locks of expired sessions automatically. ','2018-11-18 13:28:53.002000','2018-11-18 13:28:53.001000','releaseOldLocks')
+COMMIT
+DELETE FROM "system$xasinstance" WHERE "id"=562949953421613
+INSERT INTO "system$xasinstance" VALUES(562949953421613,'9f3a8b01-7b69-4238-8ee0-5c326ed59e44','2018-11-18 09:35:24.859000','2018-11-18 13:30:25.188000',NULL,NULL,NULL)
+COMMIT
+DELETE FROM "system$session" WHERE "id"=7318349394477357
+INSERT INTO "system$session" VALUES(7318349394477357,'cced8455-070c-4b00-b7f0-52f7e4aba5e9','2018-11-18 09:36:46.608000','fbfc5a2f-a7c0-4436-a645-3ef3cf1ddb9f','2018-11-18 13:32:01.840000','68462c46-814c-47d8-ba0a-842241ebf489')
+COMMIT

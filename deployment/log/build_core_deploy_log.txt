@@ -1,0 +1,11 @@
+Buildfile: G:\Documents\Demo-main\deployment\build_core.xml
+
+deploy:
+     [copy] Copying 45 files to G:\Documents\Demo-main\deployment
+     [copy] Copying 38 files to G:\Documents\Demo-main\deployment\model\lib\userlib
+     [copy] Copying 8 files to G:\Documents\Demo-main\deployment\model\resources
+
+BUILD SUCCESSFUL
+Total time: 1 second
+
+

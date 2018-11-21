@@ -1,0 +1,100 @@
+{
+  "RuntimeVersion": "7.20.1.42379",
+  "ProjectID": "f11b5dd3-8484-4d68-8b58-96c80f5912b1",
+  "ProjectName": "Demo",
+  "ModelVersion": "unversioned",
+  "Description": "",
+  "AdminUser": "MxAdmin",
+  "Roles": {
+    "8dd52bfa-6d7e-453b-b506-303c0a3d9567": {
+      "Name": "Administrator",
+      "ManageableRoles": [
+        "8dd52bfa-6d7e-453b-b506-303c0a3d9567",
+        "53f5d6fa-6da9-4a71-b011-454ec052cce8"
+      ]
+    },
+    "53f5d6fa-6da9-4a71-b011-454ec052cce8": {
+      "Name": "User"
+    }
+  },
+  "AdminRole": "8dd52bfa-6d7e-453b-b506-303c0a3d9567",
+  "Constants": [
+    {
+      "Name": "CommunityCommons.enableReleaseLockEvent",
+      "Type": "Boolean",
+      "Description": "If this constant is set to 'true', old locks will be released automatically. Set this constant to 'false' if community commons locking is not used. Use true in all other cases. ",
+      "DefaultValue": "True"
+    },
+    {
+      "Name": "UnitTesting.FindJUnitTests",
+      "Type": "Boolean",
+      "Description": "Set this value to 'True' when you would like to include your available JUnit tests to be found and listed. Leave 'False' otherwise",
+      "DefaultValue": "True"
+    },
+    {
+      "Name": "UnitTesting.RemoteApiEnabled",
+      "Type": "Boolean",
+      "Description": "",
+      "DefaultValue": "False"
+    },
+    {
+      "Name": "UnitTesting.RemoteApiPassword",
+      "Type": "String",
+      "Description": "",
+      "DefaultValue": "1"
+    }
+  ],
+  "ScheduledEvents": [
+    {
+      "Name": "CommunityCommons.releaseOldLocks",
+      "Description": "This event releases locks of expired sessions automatically. "
+    }
+  ],
+  "Configuration": {
+    "SourceDatabaseType": "HSQLDB",
+    "SourceDatabaseName": "default",
+    "SourceBuiltInDatabasePath": "model/sampledata/data/database"
+  },
+  "RequestHandlers": [
+    {
+      "Name": "/api/",
+      "DefaultEnabled": true,
+      "MatchExactly": false
+    },
+    {
+      "Name": "/link/",
+      "DefaultEnabled": true,
+      "MatchExactly": false
+    },
+    {
+      "Name": "/ws/",
+      "DefaultEnabled": false,
+      "MatchExactly": false
+    },
+    {
+      "Name": "/ws-doc/",
+      "DefaultEnabled": false,
+      "MatchExactly": false
+    },
+    {
+      "Name": "/odata/",
+      "DefaultEnabled": false,
+      "MatchExactly": false
+    },
+    {
+      "Name": "/odata-doc/",
+      "DefaultEnabled": false,
+      "MatchExactly": false
+    },
+    {
+      "Name": "/api-doc/",
+      "DefaultEnabled": true,
+      "MatchExactly": false
+    },
+    {
+      "Name": "/p/",
+      "DefaultEnabled": false,
+      "MatchExactly": false
+    }
+  ]
+}

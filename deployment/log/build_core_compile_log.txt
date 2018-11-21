@@ -1,0 +1,12 @@
+Buildfile: G:\Documents\Demo-main\deployment\build_core.xml
+
+compile:
+    [javac] Compiling 2 source files to G:\Documents\Demo-main\deployment\run\bin
+
+build:
+      [bnd] # addAll 'deployment/run/bnd.bnd' with ,
+      [bnd] # project (project.jar) 253 
+
+BUILD SUCCESSFUL
+Total time: 1 second
+
