@@ -1,4 +1,4 @@
-Buildfile: G:\Documents\Demo-main\deployment\build_core.xml
+Buildfile: G:\Documents\MendixProjects\MyMendixDemo-main\deployment\build_core.xml
 
 clean:
 

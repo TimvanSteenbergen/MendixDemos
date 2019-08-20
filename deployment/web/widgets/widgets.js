@@ -1,1 +1,1 @@
-define(["MobileFeatures/widget/MobileFeatures", "SprintrFeedbackWidget/SprintrFeedback"], {});
+define(["BootstrapTooltip/widget/BootstrapTooltip", "BootstrapTooltip/widget/BootstrapTooltipContext", "AppSwitcher/AppSwitcher", "ProfileMenu/ProfileMenu", "SprintrFeedbackWidget/SprintrFeedback", "DropZone/widget/DropZone", "MobileFeatures/widget/MobileFeatures"], {});

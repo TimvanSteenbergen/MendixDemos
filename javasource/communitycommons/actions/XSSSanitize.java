@@ -47,7 +47,7 @@ public class XSSSanitize extends CustomJavaAction<java.lang.String>
 		this.policy = policy == null ? null : communitycommons.proxies.XSSPolicy.valueOf(policy);
 	}
 
-	@Override
+	@java.lang.Override
 	public java.lang.String executeAction() throws Exception
 	{
 		// BEGIN USER CODE
@@ -58,7 +58,7 @@ public class XSSSanitize extends CustomJavaAction<java.lang.String>
 	/**
 	 * Returns a string representation of this action
 	 */
-	@Override
+	@java.lang.Override
 	public java.lang.String toString()
 	{
 		return "XSSSanitize";

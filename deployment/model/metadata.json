@@ -1,5 +1,5 @@
 {
-  "RuntimeVersion": "7.20.1.42379",
+  "RuntimeVersion": "7.23.4.51030",
   "ProjectID": "f11b5dd3-8484-4d68-8b58-96c80f5912b1",
   "ProjectName": "Demo",
   "ModelVersion": "unversioned",
@@ -10,20 +10,99 @@
       "Name": "Administrator",
       "ManageableRoles": [
         "8dd52bfa-6d7e-453b-b506-303c0a3d9567",
-        "53f5d6fa-6da9-4a71-b011-454ec052cce8"
+        "53f5d6fa-6da9-4a71-b011-454ec052cce8",
+        "a2a9f165-df72-49ef-97fc-7fc1b5e0e747"
       ]
     },
     "53f5d6fa-6da9-4a71-b011-454ec052cce8": {
       "Name": "User"
+    },
+    "a2a9f165-df72-49ef-97fc-7fc1b5e0e747": {
+      "Name": "Anonymous",
+      "ManageableRoles": [
+        "a2a9f165-df72-49ef-97fc-7fc1b5e0e747"
+      ]
     }
   },
   "AdminRole": "8dd52bfa-6d7e-453b-b506-303c0a3d9567",
   "Constants": [
     {
+      "Name": "testsets.LogNode",
+      "Type": "String",
+      "Description": "",
+      "DefaultValue": "TestSetsLog"
+    },
+    {
       "Name": "CommunityCommons.enableReleaseLockEvent",
       "Type": "Boolean",
       "Description": "If this constant is set to 'true', old locks will be released automatically. Set this constant to 'false' if community commons locking is not used. Use true in all other cases. ",
       "DefaultValue": "True"
+    },
+    {
+      "Name": "DeepLink.IndexPage",
+      "Type": "String",
+      "Description": "The index page that a user will be redirected to when the deeplink request handler finishes. This pages should start the client system, which will trigger the user's home microflow, which will execute the pending link that the handler prepared. You can (for example) modify this to have deeplinks use a different styling from the rest of the system by loading a different index page.\r\nDefault: index.html",
+      "DefaultValue": "index.html"
+    },
+    {
+      "Name": "DeepLink.LoginLocation",
+      "Type": "String",
+      "Description": "If login is required, this constant defines where to use can enter his credentials. If empty, the default login page of the deeplink module (resources/login.html) is used. \r\n\r\nIf not empty, it is assumed that after login, the user will be redirected to the deeplink again. For this reason the provided url is appended with the original deeplink.\r\n\r\nFor example:\r\n'https://mxid.mendix.com/login?a=MyApp&f=true&cont='\r\nor\r\n'../sso/login?f=true&cont='\r\n\r\nDefault: empty",
+      "DefaultValue": ""
+    },
+    {
+      "Name": "DeepLink.RequestHandlerName",
+      "Type": "String",
+      "Description": "E.g RequesthandlerName 'link' will result in https://yourdomain.com/link/\r\n",
+      "DefaultValue": "link"
+    },
+    {
+      "Name": "EmailTemplate.EmailAddressSeparator",
+      "Type": "String",
+      "Description": "",
+      "DefaultValue": ","
+    },
+    {
+      "Name": "EmailTemplate.EmailLogRetention",
+      "Type": "Integer",
+      "Description": "The amount of days to preserve error messages.",
+      "DefaultValue": "30"
+    },
+    {
+      "Name": "EmailTemplate.EmailRetention",
+      "Type": "Integer",
+      "Description": "The amount of days to preserve emails which were sent.",
+      "DefaultValue": "30"
+    },
+    {
+      "Name": "EmailTemplate.LogNode",
+      "Type": "String",
+      "Description": "",
+      "DefaultValue": "Email"
+    },
+    {
+      "Name": "EmailTemplate.SendingEnabled",
+      "Type": "Boolean",
+      "Description": "Sending emails is enabled by default. \r\nWhen setting this value to false emails won't be send. This is useful on test environments for example.",
+      "DefaultValue": "True"
+    },
+    {
+      "Name": "Encryption.EncryptionKey",
+      "Type": "String",
+      "Description": "This key will be used to encrypt and decrypt values.\r\nThe length of this key must be 16 characters.",
+      "DefaultValue": "SnelkookSnelkook"
+    },
+    {
+      "Name": "Encryption.EncryptionPrefix",
+      "Type": "String",
+      "Description": "Prefix for stored encrypted values.\r\nThis value is used to determine whether the value has been already encrypted.",
+      "DefaultValue": "{AES2}"
+    },
+    {
+      "Name": "Encryption.LogNode",
+      "Type": "String",
+      "Description": "Node which appears in log messages for this module.",
+      "DefaultValue": "Encryption"
     },
     {
       "Name": "UnitTesting.FindJUnitTests",
@@ -48,6 +127,18 @@
     {
       "Name": "CommunityCommons.releaseOldLocks",
       "Description": "This event releases locks of expired sessions automatically. "
+    },
+    {
+      "Name": "DeepLink.CleanUp",
+      "Description": "This event cleans up pending deeplinks that are older than the start of the previous day, that were never executed. This prevent stale links from piling up in your database."
+    },
+    {
+      "Name": "EmailTemplate.Cleanup",
+      "Description": ""
+    },
+    {
+      "Name": "EmailTemplate.SendQueuedEmails",
+      "Description": ""
     }
   ],
   "Configuration": {
@@ -68,7 +159,7 @@
     },
     {
       "Name": "/ws/",
-      "DefaultEnabled": false,
+      "DefaultEnabled": true,
       "MatchExactly": false
     },
     {

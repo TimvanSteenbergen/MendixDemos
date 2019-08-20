@@ -1,14 +1,9 @@
 package system;
 
-import aQute.bnd.annotation.component.Component;
-import aQute.bnd.annotation.component.Reference;
-
 import com.mendix.core.actionmanagement.IActionRegistrator;
 
-@Component(immediate = true)
 public class UserActionsRegistrar
 {
-  @Reference
   public void registerActions(IActionRegistrator registrator)
   {
     registrator.bundleComponentLoaded();
@@ -102,6 +97,27 @@ public class UserActionsRegistrar
     registrator.registerUserAction(communitycommons.actions.waitForLock.class);
     registrator.registerUserAction(communitycommons.actions.XSSSanitize.class);
     registrator.registerUserAction(communitycommons.actions.YearsBetween.class);
+    registrator.registerUserAction(deeplink.actions.ExecuteDeeplink.class);
+    registrator.registerUserAction(deeplink.actions.GetApplicationUrl.class);
+    registrator.registerUserAction(deeplink.actions.GetCurrentSessionID.class);
+    registrator.registerUserAction(deeplink.actions.ReadMicroflows.class);
+    registrator.registerUserAction(deeplink.actions.StartDeeplinkJava.class);
+    registrator.registerUserAction(emailtemplate.actions.ConvertHTMLBodyToPlainText.class);
+    registrator.registerUserAction(emailtemplate.actions.CopyAttachmentContent.class);
+    registrator.registerUserAction(emailtemplate.actions.ReplaceCustomToken.class);
+    registrator.registerUserAction(emailtemplate.actions.ReplaceEmailTemplateTokens.class);
+    registrator.registerUserAction(emailtemplate.actions.SendEmail.class);
+    registrator.registerUserAction(encryption.actions.DecryptString.class);
+    registrator.registerUserAction(encryption.actions.EncryptString.class);
+    registrator.registerUserAction(encryption.actions.GeneratePGPKeyRing.class);
+    registrator.registerUserAction(encryption.actions.PGPDecryptDocument.class);
+    registrator.registerUserAction(encryption.actions.PGPEncryptDocument.class);
+    registrator.registerUserAction(encryption.actions.ValidatePrivateKeyRing.class);
+    registrator.registerUserAction(hmacsha1.actions.GenerateHMAC_SHA1.class);
+    registrator.registerUserAction(mxmodelreflection.actions.ReplaceToken.class);
+    registrator.registerUserAction(mxmodelreflection.actions.SyncObjects.class);
+    registrator.registerUserAction(mxmodelreflection.actions.TestThePattern.class);
+    registrator.registerUserAction(mxmodelreflection.actions.ValidateTokensInMessage.class);
     registrator.registerUserAction(objecthandling.actions.clone.class);
     registrator.registerUserAction(objecthandling.actions.commitInSeparateDatabaseTransaction.class);
     registrator.registerUserAction(objecthandling.actions.copyAttributes.class);
@@ -120,7 +136,61 @@ public class UserActionsRegistrar
     registrator.registerUserAction(objecthandling.actions.objectHasChanged.class);
     registrator.registerUserAction(objecthandling.actions.refreshClassByObject.class);
     registrator.registerUserAction(objecthandling.actions.StartTransaction.class);
+    registrator.registerUserAction(restservices.actions.addCookieToNextRequest.class);
+    registrator.registerUserAction(restservices.actions.addCredentialsToNextRequest.class);
+    registrator.registerUserAction(restservices.actions.addHeaderToNextRequest.class);
+    registrator.registerUserAction(restservices.actions.addIfNoneMatchHeader.class);
+    registrator.registerUserAction(restservices.actions.appendParamToUrl.class);
+    registrator.registerUserAction(restservices.actions.appendSlashToUrl.class);
+    registrator.registerUserAction(restservices.actions.copyAttributes.class);
+    registrator.registerUserAction(restservices.actions.delete.class);
+    registrator.registerUserAction(restservices.actions.deserializeJsonToObject.class);
+    registrator.registerUserAction(restservices.actions.fetchChanges.class);
+    registrator.registerUserAction(restservices.actions.followChanges.class);
+    registrator.registerUserAction(restservices.actions.get.class);
+    registrator.registerUserAction(restservices.actions.get2.class);
+    registrator.registerUserAction(restservices.actions.getCollection.class);
+    registrator.registerUserAction(restservices.actions.getCollectionAsync.class);
+    registrator.registerUserAction(restservices.actions.GetNrOfIncomingConnections.class);
+    registrator.registerUserAction(restservices.actions.getRequestCookies.class);
+    registrator.registerUserAction(restservices.actions.getRequestHeader.class);
+    registrator.registerUserAction(restservices.actions.getResponseCookies.class);
+    registrator.registerUserAction(restservices.actions.getResponseHeader.class);
+    registrator.registerUserAction(restservices.actions.getRestBaseUrl.class);
+    registrator.registerUserAction(restservices.actions.getRestConsumeError.class);
+    registrator.registerUserAction(restservices.actions.GetTrackingState.class);
+    registrator.registerUserAction(restservices.actions.getWithParams.class);
+    registrator.registerUserAction(restservices.actions.isUrl.class);
+    registrator.registerUserAction(restservices.actions.isValidObjectKey.class);
+    registrator.registerUserAction(restservices.actions.LoadService.class);
+    registrator.registerUserAction(restservices.actions.post.class);
+    registrator.registerUserAction(restservices.actions.post2.class);
+    registrator.registerUserAction(restservices.actions.postWithResult.class);
+    registrator.registerUserAction(restservices.actions.publishDelete.class);
+    registrator.registerUserAction(restservices.actions.publishUpdate.class);
+    registrator.registerUserAction(restservices.actions.put.class);
+    registrator.registerUserAction(restservices.actions.RebuildServiceIndex.class);
+    registrator.registerUserAction(restservices.actions.registerCredentials.class);
+    registrator.registerUserAction(restservices.actions.registerNTCredentials.class);
+    registrator.registerUserAction(restservices.actions.request.class);
+    registrator.registerUserAction(restservices.actions.resetChangeTracking.class);
+    registrator.registerUserAction(restservices.actions.serializeObjectToJson.class);
+    registrator.registerUserAction(restservices.actions.ServiceConsistencyCheck.class);
+    registrator.registerUserAction(restservices.actions.setGlobalRequestSettings.class);
+    registrator.registerUserAction(restservices.actions.setResponseCookie.class);
+    registrator.registerUserAction(restservices.actions.setResponseHeader.class);
+    registrator.registerUserAction(restservices.actions.setResponseStatus.class);
+    registrator.registerUserAction(restservices.actions.setRestBasePath.class);
+    registrator.registerUserAction(restservices.actions.StartMicroflowServiceJava.class);
+    registrator.registerUserAction(restservices.actions.StartPublishesServicesJava.class);
+    registrator.registerUserAction(restservices.actions.throwRestServiceException.class);
+    registrator.registerUserAction(restservices.actions.unfollowChanges.class);
+    registrator.registerUserAction(restservices.actions.UnloadService.class);
+    registrator.registerUserAction(restservices.actions.urlEncode.class);
     registrator.registerUserAction(system.actions.VerifyPassword.class);
+    registrator.registerUserAction(testsets.actions.deserializeJsonToObjectOverride.class);
+    registrator.registerUserAction(testsets.actions.EntityToJSON.class);
+    registrator.registerUserAction(testsets.actions.ExecuteMicroflowWithJSON.class);
     registrator.registerUserAction(unittesting.actions.FindAllUnitTests.class);
     registrator.registerUserAction(unittesting.actions.ReportStepJava.class);
     registrator.registerUserAction(unittesting.actions.RunAllUnitTestsWrapper.class);

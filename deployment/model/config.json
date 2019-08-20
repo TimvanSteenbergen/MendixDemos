@@ -6,15 +6,27 @@
     "DatabaseHost": "",
     "DatabaseUserName": "",
     "DatabaseUseIntegratedSecurity": "False",
-    "ApplicationRootUrl": "http://localhost:8080/",
+    "ApplicationRootUrl": "http://localhost:8082/",
     "ScheduledEventExecution": "Specified",
-    "MyScheduledEvents": "CommunityCommons.releaseOldLocks"
+    "MyScheduledEvents": "CommunityCommons.releaseOldLocks,DeepLink.CleanUp,EmailTemplate.SendQueuedEmails,EmailTemplate.Cleanup"
   },
   "Constants": {
+    "testsets.LogNode": "TestSetsLog",
     "CommunityCommons.enableReleaseLockEvent": "True",
+    "DeepLink.IndexPage": "index.html",
+    "DeepLink.RequestHandlerName": "link",
+    "DeepLink.LoginLocation": "",
+    "EmailTemplate.EmailRetention": "30",
+    "EmailTemplate.SendingEnabled": "True",
+    "EmailTemplate.EmailLogRetention": "30",
+    "EmailTemplate.LogNode": "Email",
+    "EmailTemplate.EmailAddressSeparator": ",",
+    "Encryption.LogNode": "Encryption",
+    "Encryption.EncryptionPrefix": "{AES2}",
+    "Encryption.EncryptionKey": "SnelkookSnelkook",
     "UnitTesting.FindJUnitTests": "True",
     "UnitTesting.RemoteApiPassword": "1",
     "UnitTesting.RemoteApiEnabled": "False"
   },
-  "AdminPassword": null
+  "AdminPassword": "1"
 }
